@@ -1,8 +1,8 @@
 <template>
   <section class="grow-0 bg-content py-[10px]" id="carouesl">
     <van-swipe class="my-swipe" :autoplay="5000" indicator-color="white">
-      <van-swipe-item v-for="(item, index) in carouesl" :key="item"
-        ><div
+      <van-swipe-item v-for="(item, index) in carouesl" :key="item">
+        <div
           class="h-[154px] image-bg bg-[#1a3647] bg-cover rounded-[10px] py-[10px] px-[15px] flex flex-col justify-between text-[15px]"
         >
           <p class="text-white">{{ item.title }}</p>
@@ -15,8 +15,8 @@
             <span>仅接受USDT</span>
             <span>玩法介绍</span>
           </div>
-        </div></van-swipe-item
-      >
+        </div>
+      </van-swipe-item>
     </van-swipe>
   </section>
 </template>

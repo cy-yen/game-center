@@ -1,5 +1,5 @@
 <template>
-  <img class="h-[26px] w-[26px]" src="./../assets/images/wangzhan@2x.png" alt="" @click="showLang" />
+  <img class="h-[26px] w-[26px]" src="./../assets/images/wangzhan@2x.png" alt="" @click="show = true" />
   <Teleport to="body">
     <van-overlay :show="show" class="z-10" @click="show = false">
       <div class="h-full flex items-center justify-center">
@@ -33,8 +33,6 @@
 import { ref, reactive } from 'vue'
 
 const show = ref(false)
-const showLang = () => (show.value = true)
-
 const languages = reactive([
   { lang: 'cn', checked: true },
   { lang: 'en', checked: false }

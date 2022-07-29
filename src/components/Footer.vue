@@ -5,10 +5,10 @@
         v-for="(item, index) in Object.keys(items)"
         class="text-[10px] flex flex-col justify-center items-center grow before:image-bg before:w-[26px] before:h-[26px]"
         :class="[
-          route.name === item ? `${items[item].active} text-[#60cfff]` : `${items[item].default} text-[#666666]`
+          $route.name === item ? `${items[item].active} text-[#60cfff]` : `${items[item].default} text-[#666666]`
         ]"
         :key="items[item].title"
-        @click="router.push({ path: `/${item}` })"
+        @click="$router.push({ path: `/${item}` })"
       >
         {{ items[item].title }}
       </li>
@@ -18,10 +18,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-
-const route = useRoute()
-const router = useRouter()
 
 const items = ref({
   home: { title: '首页', default: 'before:bg-shouye', active: 'before:bg-shouye1' },
