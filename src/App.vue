@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-full">
     <Header />
-    <section class="grow">
+    <section class="grow overflow-auto">
       <router-view />
     </section>
     <Footer />

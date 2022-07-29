@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .image-bg {
+    @apply inline-block bg-center bg-no-repeat bg-contain;
+  }
+}

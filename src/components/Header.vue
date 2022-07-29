@@ -1,12 +1,12 @@
 <template>
-  <header class="h-[44px] flex justify-between">
+  <header class="h-[44px] flex justify-between shrink-0">
     <div class="flex items-center h-full pl-[15px]">
       <img
         class="w-[22px] h-[28px]"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAYAAABxlTA0AAAAAXNSR0IArs4c6QAAAftJREFUeF7t2c1JA2EUheFz1ypiE9ZgBbrXbrQAq9ECBPeWIDYhxOxHAgouTOabC28k+Gb9zZnJM4f5uxV/qECh6YZHYLgEAgsMC8DxNlhgWACOt8ECwwJwvA0WGBaA422wwLAAHG+DBYYF4HgbLDAsAMfbYIFhATjeBv8l8DRN50nuk1wmOYaP5dDi10mektxV1eu2g9/a4C/clyRnh/bP93y870kuqurtt/3uAn5Icr3ngz3U3T1W1c1S4A8vC8Pne11VJwIPey1euKqq06XAXiLGnVuXiM0ThDe5eeTeTW6T++Mx7SrJ0fy+/tWKVZLnJLetx7R/RQX+Wd/kQNxNtMACwwJwvA0WGBaA422wwLAAHG+DBYYF4HgbLDAsAMfvbLAzuZ36zuTgcn7H9z5XTtPkB/fxM9T64O5MbhzYmdy4VWulM7kW2/hGrUuEM7kx4N5NzpncrK4zuVmiPSzwVRlGFlhgWACOt8ECwwJwvA0WGBaA422wwLAAHO9Eow/sRKNvt2jL3sceJxqLkFufK51ojBs70Ri3aq10otFiG9+odYlwojEG3LvJOdGY1XWiMUu0hwW+KsPIAgsMC8DxNlhgWACOt8ECwwJwvA0WGBaA422wwLAAHG+DBYYF4HgbLDAsAMfbYIFhATjeBgsMC8DxNlhgWACO/wTeU4pZTCLWzgAAAABJRU5ErkJggg=="
         draggable="false"
       />
-      <p class="text-[#ffffff] text-[14px] leading-[28px] ml-[5px]">Diamond钻石哈希娱乐城</p>
+      <p class="text-white text-[14px] leading-[28px] ml-[5px]">Diamond钻石哈希娱乐城</p>
     </div>
     <div class="flex items-center h-full pr-[15px]">
       <img class="h-[26px] w-[26px] mr-[15px]" src="./../assets/images/wangzhan@2x.png" alt="" />
@@ -18,4 +18,5 @@
     </div>
   </header>
 </template>
-w
+
+<script setup></script>
