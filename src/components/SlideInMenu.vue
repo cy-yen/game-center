@@ -8,7 +8,7 @@
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAADTFJREFUaEPNWwl0VNUZ/t7MZLKRhIQUCWEPKZSAFGWVY9kLgtiwFDjGyikFD1iketSjVUqxansQqahVPIKHlrBXlspmQECQSAKBhCUsMSGR7CGTySyZ7b37bs99M2/ykkxmeQnqPQfyzry7/N+/3f//730c7mPbeuB015NW89hrTbqRJp5P40QMcIpIslAx3km5CA4cOA6OCA1n7KLRVAsUdxopCofFReaN76rN2ThnUmNnk8d19oT7cnJ6bakkC8strvQyJx1rJaKOoYJWC7Rejf3O/nmb51kQAY2GxGuQI1Du4OREsud/6RPKO4PWTgO85ty1aSdqnX+6bhNnWASqhV4HgDbTKD9KKzKgitfe3zzkMCZQ0d1PpGwaEsshKyKM21i3YMSJjgDvMOD3r5RM2XHX/vZlqzhG0Go8EvOg80pPBsiIpwDH+nnIlsDJv7N+GgUeBZdYP0FEBBVzoznhdcNvh59UA1w14Nv19ckvFhjfP2UU5tnCdC3VVQKllJZC0koVZv2kxgEaT39vV5lpHgZIczKtoIBAoRPF/QPCsapo9qDKUICrAvxWYW3G1jLrRyUCFwcmVaXqKu3Rq7YeBigZ0YZKpY57mCDNqyBROR/r4hJNsZT80Tw3dUewoEMCTCkNf+Zy7Yc7Ku3LbGEaN05ZJVs4n0DLtwYnz6PA10LSHpOQDV96x/6jADN1J9n8WAR57tjMVGcwKwfqI72nlMbPO199cL9B+BUYWG9TSqG951ZLyE5KlqBXtZUOW1bxdszBTZRnAIXWIZxN1mnS7z7e1+gPUFASppR2n5FdcyLLJDwInRJsULxS8MZtf4k6ijgtB7MI3OM96i45vBDnk7tLwCk4F7lKBWEa5g6sa2+mgEtQkylhxjXb6Q6DFUTMTwzDygExGBkXjigdBzuhqHQSXDQ6saeyCcfqefA6H/t10HyggFO4GutommRekNbga5hfwMxmn8y7l7WrzjlBtWQJRRQV8VZqNJ4fGO+X9JsWJ14tNOKQkUDVerKkneRMShg/vdiHTfsF/Ocbhk//UdK0DHpt0Dxu0ZGIWNUrAmsHdUXXsODneCqvFjsNpHmrCmV1CbQI2IQtmDtgWeuh7QLOLDdlPHulcbuF7bEqWxJHUTolCfqQPDhgFkT84mQVqjXBM6nZh3q8NwNu55/C3JQWW5ZPwJTS5IdOVxbmu7g41Y5EpHi5dwTWDUlQxa69pfew6IYD7hA1xOZRbQiiCTZHGhY0Byc+AT9bULP/40p+jio7kmnjCS6NT8SIuIgQqXV3p6KIlA8OoWzoGMX2E8JUUrgqsj36ANL7z5VHtgF8qdE+eUZO/Vf3ODnWC2ERRVeNQFA1pQe6q5GQFIdwmLD5KM4am4BhYwBtiJKWpcz+WlxTsGDgKUZeG8ALc6tz9hjIGGgD7lj+OcET5I7thlEJkao4xgA/sesUDpXVslQRXNooUD2bSxGIBJpZBs2TXMzuN7YN4PO19VOnX7afMGs6EFzIRLgIPn8oAXOTogKR5fM9Azxn92kcLK31Jg3ckJGgUTGe1DHIaZlaM+BmfhoWpnzVQozLrtQd2VzhnNkh2/XasIitD3bF4l7RQVLWshsDPOM/XyKrurE58yIE3OBfgsYmACILooNozVI+itn9ZnkB22yG3g9n20pvimr2Ah8LE4oNP4/CCwO6BkFV2y4McNp7n+MGT1pqsSAAKWlAYhIgCr6s0vd6PCEQXP29gD8ta3zpmevm9QghQPCLhALz47XYO6q7KsAWpwvJ734Oq684gIHumwok9QXYczD7PJO0TXjZC/jp/Npz26r58R12VgqVzhweh4zkLqoAC6KIObu/xpHv6+DOuVs1IoBL6gvaJzU40FLhQMyWANOGhrhxV+31OU6E6Pv9YHER7B+ZgPQHVDotABkHzmHnrQrfgNnSDHRiT1Cm4oQPrN4CFSTAV+oMM0bn2Y45fXFSlXwA8CI2D43DH/qokzCz4YlbjuJMvcV/2kgIEJcADB4BsGd/jVL3Pryx2Lj6+VuWNzvNfiW1ARZ102Lnw+psmAFOfXcvit1VS/9NJOCiugBDRoNK1c72mwT4xRuGXRvu2Ba1rGSoFW3zuBF64PLEnqxaEvJkd01WpLx/ACQiPLixoghOHw7KQlE/TkwCvOhide7uejLaWzkMbonAvQSCrUNjkNErFrpgPKlnRpdI8erxS9h4qQgIJVtjKqvVgg4bJ0VnvpoEeHZ2xd1DFq636szIH3Qbj1PjEzExMXjn9crJy1h/7gYQqQ/M1NY95EBj2COAXt8m8ZAAz/im0vqlDepCokAk8SK2DI3Bkj6xgXpK75ntzt15Ege+v6euAODxHywo0aSNghgV2yIUlQA/ll3NH7OKnbclKaGJFKt6RWJjmv/yjjxEirD+6YmwgmKRn06CAG7wCNC4boDo9uAS4FnZ1fyR+wUYQA9KkPNoD/SJDMzTnCoDJnx2DHy4CnX2hV3ggZShwM+SpADFbcPfVlsPWcT7o9JsAUIxMZzg9OQ+fj02k27/v2WiLJx55tA9e7uyZqBZRNazvxvw49kVdw/fL6cliNgwqAuW94tFZBA1hZzyOszKPAkj884qtjN/oDVJfd2AMy7X5O6oZdtSR42m7fgUTsTtqckhTb37agky9p0DjVZXPGgftEelVxTU7NpUyS/qlDxYPj4RREQTgsyR3ZDeI3Rr2VFQjBVfnIeVZasqy0Tt7sN/v161+rUy8maHIy1CwYkiHo7WYl5yJBb3iUEPtTVtANUWOz69VIRd+cUoMtsAfVj7iUSQyimpdKnVMWPImbpjdnbMEWpjvkUQMUAPLOgZiYzeXZAW00ke1kMLSxXP3a3D9vwS7L91F40CAdR4cTl5oJTGTThbXX/WQQPvGzJDRAodETE7MQxL+3bBlO5RIRfcQ+Ut6292unDw5l1syi5Ebr0ZiNAHVwBgg3niTg9Ze/JC5bmd98h4Kdn2F/cSikROREbPSCztx6QZZHCvBl2AMd98X4v1XxdIRQLKwshAu4CTdxcAWPvwZvVLz5Xw6yXH1Q5gnUCwZkA0VqXEIbYjx6adDD6/pgFrjl/CkfJ77ScbDGmjtbnEY7PZej9y3lBawEPb8mKJmzpOINgxvCsW9VSX0HcyRp/TrTycg4+vlvk+eRQIgd3ZXMRjM/z+YsWRrbXizDaFAArMS9DgvyMf+CHoVr1GYV0jhn9yGCKza2VjAYzDdRRvLG4u07L3+YbGaZPPG48bdcx3KS6NEYq/pETjjdQ41cT8EANdooju6/bALJWqFFcmGOBG86/xzvITbc5Tnr5YlbOtlh8D6STe85pQvDUwGq8N/GkDZtQO+uAgihwuN3/l0NTJ52Lt022PWlif7Jr6yU/kmU8adGHNUiYUnwyOxjP9fuKAOQ5jNn2BC2Z7M1i2Z1usU/HOcukim88Tsxfyq/a/V+6a4z7556RsZ+/wOMz/CTssCQzHYdKWo/jaYPbcaqJAk+MA3l7S/nEpG1hvq0+e+m1TYQE7EGe1IYHiq9EJmJzYycF8Jxs2k96sbcdxtNrolrDTZYLZnob3Vnhv67V7JrrpVlXGK0WO7WYWvwpAZqoGKUEk8J2MIaTptBoOq7PycKLOJNWotRbr78i65duVk/g9BH75cuXm9eWupYgIA6xW4NpFd30ohApkSBR3tDOTKsujmZNutG3BO8uCv9TC1v7uu+/C19wLz9pVL06Q7JnTgLuRB2pvarcM2lGaVY+Xb+SyC2oW25mUJPv04lWr2lxFDHjMbzKZEjKumE8fNpEHpYCE5aclhUBDbejXEFSjCTBQARZW+9VYPSaZ1y4N/WKavIylpqb7/BuOE1lNcIPWhoGrKAGtLAWkIOVHbErJWu1Xo/X8NOvaFeqvHspQmKSXFDQc3GfiHpVAM6CGWre0lZHN/cYuX0GWgwp2E4CK0FqbvkmK0KVXtCNZmayAKq2kn9n0hgb9vzJryNImVnbRasHZmkBv5nkcWUjTBc+a1iCVKuziobE5tkzv3XflsVUzO+/6sJK6dYVVGZ+VOz8qYvu0nu3TxO3MWDlUeRM+eEjt91RWLmWg8h0su9MUT/iVxnXPtth6/C2rWiTsE4DVN20ffmkU5liYI2NqfqsAsBjbOrPWl8hlibWmzFdZVj7+VErV7oReIAf6xUQ+V7R68f3/BEBJ579vV0zZVsG/nW0mY5zh4eDKi0BrK9w2Lt+Y9xpQEPz1XijzDFJeMHO6EEHpheioyNcMrz/1w37k0Vo4W+/UTsssbnw+36Wfbqyq0KKqGJASEEXEzr5YUUpRlrx3MuVnP54vXYgAOHgSr+WywvTcxrq/LvtxP+NpDfxCcWXvjXVkYVFZ5W/uFBeNbXC4dFI8LkVAHgm3idQUp/xEBHgXOBEkUafJcQnCwcdSe+zZvST9p/Whli9HkV9a2nXf7eqxWUXVI00O+9BIyvW3U/Q0OJ3xNkIjNCwT03KOSFBjjE5XBZGUGlz89XHJiXnjHojPWXsfPsX7P7EbmIUKpPzlAAAAAElFTkSuQmCC"
           alt=""
         />
-        <span class="ml-[15px]">123</span>
+        <span class="ml-[15px]">未登入</span>
       </section>
       <section class="flex justify-between my-[26px] items-center">
         <div>
@@ -68,7 +68,23 @@
         </ul>
       </section>
       <section class="mt-[26px] flex justify-center items-center">
-        <button class="border-[0.5px] border-[#ee4581] leading-[41px] rounded-[20px] px-[25px]">退出</button>
+        <button
+          class="border-[0.5px] border-[#ee4581] leading-[41px] rounded-[20px] px-[25px] mr-[10px]"
+          @click="$router.push('/login')"
+          v-if="!isLogin"
+        >
+          登錄
+        </button>
+        <button
+          class="border-[0.5px] border-[#ee4581] leading-[41px] rounded-[20px] px-[25px]"
+          @click="$router.push('/register')"
+          v-if="!isLogin"
+        >
+          註冊
+        </button>
+        <button class="border-[0.5px] border-[#ee4581] leading-[41px] rounded-[20px] px-[25px]" v-if="isLogin">
+          退出
+        </button>
       </section>
     </div>
   </van-popup>
@@ -78,6 +94,7 @@
 import { ref } from 'vue'
 
 const show = ref(false)
+const isLogin = ref(false)
 
 defineExpose({
   showMenu: () => {

@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col h-full">
-    <Header />
+    <Header v-if="$route.meta.showHeader" />
     <section class="grow overflow-auto">
       <router-view />
     </section>
-    <Footer />
+    <Footer v-if="$route.meta.showFooter" />
   </div>
 </template>
 

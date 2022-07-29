@@ -44,6 +44,24 @@ const routes = [
       showHeader: true,
       showFooter: true
     }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../pages/Login.vue'),
+    meta: {
+      showHeader: false,
+      showFooter: false
+    }
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import('../pages/Register.vue'),
+    meta: {
+      showHeader: false,
+      showFooter: false
+    }
   }
 ]
 
