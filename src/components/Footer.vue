@@ -3,7 +3,7 @@
     <ul class="flex justify-between h-full">
       <li
         v-for="(item, index) in Object.keys(items)"
-        class="text-[10px] flex flex-col justify-center items-center grow before:image-bg before:w-[26px] before:h-[26px]"
+        class="text-[10px] flex-center-center flex-col grow before:image-bg before:w-[26px] before:h-[26px]"
         :class="[
           $route.name === item ? `${items[item].active} text-[#60cfff]` : `${items[item].default} text-[#666666]`
         ]"

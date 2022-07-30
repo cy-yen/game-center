@@ -11,4 +11,14 @@
 <script setup>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import { defaultinfo } from './api/index'
+import { onMounted } from 'vue'
+import { useStore } from './store/index'
+
+const store = useStore()
+
+onMounted(async () => {
+  const res = await defaultinfo()
+  store.setDefaultInfo(res.data)
+})
 </script>

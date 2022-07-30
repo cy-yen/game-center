@@ -1,7 +1,9 @@
 <template>
   <div class="relative h-full">
     <header class="flex justify-between h-[44px] items-center text-white p-[15px]">
-      <van-icon name="arrow-left" class="text-[20px]" />
+      <i class="w-[44px] h-[44px] ml-[-15px] flex-center-center" @click="$router.push('/login')">
+        <van-icon name="arrow-left" class="text-[30px]" />
+      </i>
       <Language />
     </header>
     <section class="text-white text-[26px] px-[30px] absolute top-[50%] translate-y-[-50%] w-full">

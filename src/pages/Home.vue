@@ -10,6 +10,22 @@
   </section>
   <section class="mx-[2.5%] rounded-[19px] bg-[#f0f3f7] px-[8px] pb-[42px] mb-[20px]">
     <p class="text-[#1b1a1a] text-[15px] py-[16px] px-[13px]">游戏介绍</p>
+    <ul class="w-full flex overflow-x-auto">
+      <li
+        v-for="(game, index) in gameList"
+        :key="game.coin_address"
+        class="min-w-[229px] h-[97px] rounded-[12px] text-12 bg-white px-[13px] py-[14px] flex justify-between mr-[36px] last:mr-0"
+      >
+        <img :src="getApiImage(game.game_ico)" width="64" height="64" alt="" />
+        <div>
+          <p>{{ game.game_name }}</p>
+          <p class="my-[5px]">
+            <span class="mr-[20px]">赔率</span><span class="text-[#25ac44]">{{ game.game_odds_num }}</span>
+          </p>
+          <p class="ml-[62px] mt-[10px] text-[#3a99ff]">立即投注</p>
+        </div>
+      </li>
+    </ul>
     <section
       id="about"
       class="p-[16px] bg-white rounded-[19px] mt-[20px]"
@@ -68,3 +84,19 @@
     </section>
   </section>
 </template>
+
+<script setup>
+import { onMounted, reactive } from 'vue'
+import { useStore } from '../store'
+import { gamecoinaddress } from './../api/index'
+
+const store = useStore()
+const gameList = reactive([])
+onMounted(async () => {
+  gameList.splice(0)
+  const res = await gamecoinaddress({})
+  gameList.push(...res.data)
+})
+
+const getApiImage = (_path) => store.imageServerPath + _path
+</script>
