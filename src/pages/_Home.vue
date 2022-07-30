@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="flex justify-center">
     <img src="./../assets/images/ezgif-5-13b11b7b26.gif" alt="" />
   </section>
   <section class="text-center my-[20px] text-[15px] text-[#f6fbf9]">
