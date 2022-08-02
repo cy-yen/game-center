@@ -2,7 +2,7 @@
   <header class="h-[44px] flex justify-between shrink-0">
     <div class="flex items-center h-full pl-[15px]">
       <SlideInMenu />
-      <p class="text-white text-[14px] leading-[28px] ml-[5px]">{{ $t('platform.title') }}</p>
+      <p class="text-white text-[14px] leading-[28px] ml-[5px]">{{ $t('Diamond钻石哈希娱乐城') }}</p>
     </div>
     <div class="flex items-center h-full pr-[15px]">
       <Language icon="white" />

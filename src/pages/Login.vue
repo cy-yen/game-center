@@ -1,7 +1,7 @@
 <template>
   <div class="relative h-full">
     <header class="flex justify-end h-[44px] items-center text-white">
-      <Language class="mr-[10px]" />
+      <Language class="mr-[10px]" icon="white" />
       <span class="mx-[15px]" @click="$router.push('/register')">注册</span>
     </header>
     <section class="text-white text-[26px] px-[30px] absolute top-[50%] translate-y-[-50%] w-full">

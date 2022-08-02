@@ -3,7 +3,7 @@
     <i class="w-[44px] h-[44px] ml-[-15px] flex-center-center" @click="$router.push('/home')">
       <van-icon name="arrow-left" class="text-[30px]" />
     </i>
-    遊戲介紹
+    {{ $t('遊戲介紹') }}
   </section>
   <section class="p-[10px]">
     <div class="p-[20px] bg-[#4b3aec] rounded-[20px] mt-[10px]">
@@ -11,13 +11,13 @@
     </div>
     <div class="p-[20px] bg-[#4b3aec] rounded-[20px] mt-[10px]">
       <p class="my-[10px] text-[26px] text-white">{{ currentGame.game_name }}</p>
-      <p class="text-white text-[18px]">赔率{{ currentGame.game_odds_num }}</p>
+      <p class="text-white text-[18px]">{{ $t('賠率') }}{{ currentGame.game_odds_num }}</p>
       <div class="">
         <span class="text-white text-[14px]">{{ currentGame.coin_address }}</span>
       </div>
     </div>
     <div class="p-[20px] bg-[#4b3aec] rounded-[20px] mt-[10px]">
-      <p class="my-[10px] text-[26px] text-white">游戏规则</p>
+      <p class="my-[10px] text-[26px] text-white">{{ $t('遊戲規則') }}</p>
       <div v-html="currentGame.game_desc" class="text-white leading-[2] text-[14px]"></div>
       <div
         class="flex mt-[15px] justify-between items-center text-white text-[14px] border-b-[0.5px] botder-white pb-[3px]"
@@ -49,11 +49,11 @@
             alt=""
           />
         </div>
-        <span>4星推薦</span>
+        <span>{{ $t('4星推薦') }}</span>
       </div>
     </div>
     <div class="p-[20px] bg-[#4b3aec] rounded-[20px] mt-[10px]">
-      <p class="my-[10px] text-[26px] text-white">其他推荐</p>
+      <p class="my-[10px] text-[26px] text-white">{{ $t('其他推薦') }}</p>
       <div class="flex flex-wrap justify-between">
         <div
           class="w-[45%] mt-[10px] border-[0.5px] border-[#0237a6] p-[10px] rounded-[10px]"
@@ -64,12 +64,12 @@
             <div class="w-[125px] h-[125px] bg-[#eee]"></div>
           </div>
           <p class="text-white text-[18px] mt-[10px]">{{ game.game_name }}</p>
-          <p class="text-white text-[18px] mt-[30px]">赔率{{ game.game_odds_num }}</p>
+          <p class="text-white text-[18px] mt-[30px]">{{ $t('賠率') }}{{ game.game_odds_num }}</p>
           <button
             class="bg-[#ea4c62] text-white py-[3px] px-[8px] rounded-[5px] mt-[10px]"
             @click="$router.push(`/game-info/${game.game_code}`)"
           >
-            立即游戏
+            {{ $t('立即遊戲') }}
           </button>
         </div>
       </div>

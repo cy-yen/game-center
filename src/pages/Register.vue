@@ -4,7 +4,7 @@
       <i class="w-[44px] h-[44px] ml-[-15px] flex-center-center" @click="$router.push('/login')">
         <van-icon name="arrow-left" class="text-[30px]" />
       </i>
-      <Language />
+      <Language icon="white" />
     </header>
     <section class="text-white text-[26px] px-[30px] absolute top-[50%] translate-y-[-50%] w-full">
       <p>創建一個新</p>
@@ -31,7 +31,9 @@
           placeholder="重復密碼"
         />
       </div>
-      <button class="text-[15px] w-full mt-[100px] bg-[#2979ff] h-[41px] rounded-[52px]">創建</button>
+      <button class="text-[15px] w-full mt-[100px] bg-[#2979ff] h-[41px] rounded-[52px]" @click="userRegister">
+        創建
+      </button>
     </section>
   </div>
 </template>

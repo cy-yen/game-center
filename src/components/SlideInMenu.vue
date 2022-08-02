@@ -20,7 +20,7 @@
         <section class="flex justify-between my-[26px] items-center">
           <div>
             <p class="text-[25px]">$0.000</p>
-            <p class="text-[#edcbdd] text-[14px]">餘額</p>
+            <p class="text-[#edcbdd] text-[14px]">{{ $t('餘額') }}</p>
           </div>
           <div class="w-[41px] h-[41px] flex-center-center bg-[#00b7ff] rounded-[100%]">
             <img
@@ -42,7 +42,7 @@
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABUFJREFUeF7tnE9sFGUYxp9npn/4k7K7hbZTBDVBET1gonjQGGNi9GK84KUKB+RQQ2OCHpSE+A8SFQ5wEBNiJIYQJGi8aAzeNIYbRo1REyIGgpBtd2vb7daKtLvzmEUwtPvv285MdzZ+e93nfd/n+8238858M/sR9hOIAANF22DEGuDYmFbMuv77EAq5gjO0oYdTcTtmsQU4mtOmInQSwLoSNAK/UhzoTfGHOEGMHUBJzObwkk+9Q6DjZlgCrlJ8xUvx3bhAjBXAdF6rHOEopCdrASL52RJgeyLB8WaDjA3A4Qk96lDHBdxiCOWS7xe3rO5uP22oj0TWdICS3Gwer0l6FYDb4CgLkvZ6Sectkn6DsaHImwrw8pjWuI4+IvFIsNHwK7cdW3uWczhYnsajmwZwZLzwFFznQwirGrddIYLIOuC23gS/DCWfYZJFByipI5PHfkg7/706CfXjCzzoJbCb5GyomaskC3sANT1nJ3WHr2vXdvdHPLgzxMwzfckl5yOuE/oMqOo3PV7Y4tA5DKIr6kFdzz/pgIO9SX4SZb3IZ+DIiJaj0z8E8rkoB1IltwAdmU04O9eSV6KoHynAzLg2ytVJCHdHYd48J39WEQP9K/mLeYyZMjKAwzntIHQAwFIzK5Gr/gL8F71k2wdhVgod4MSEkjPEEUFPh2k0vFz6eNp3nl/XzckwcoYKMJPXg/J1AsDtYZiLMMf5NnJgVYLfBq0RCsDSCkpm0t8FcC+A9qCmFiWemCG5u7cLB0lqoTUDA8z8qT4UcUzSEws10dQ48pQcbOvv4uhCfAQCmBmbfVxt7jEI3kKKxyaGSMvn1v4Uv27U04IASmrLTGEvfO0C4DRaNKb6osS3vST2kCyaemwYYHpCt7kOTkh6yLRIK+kknO7o5LMrl/Gyie+GAGYmtBnUEQEpk+QtrBmDuN1L8fN6YzACeOGClixL+QcE7ohgBaWex2Z9L0iH+pLOyyRnqpmoCzCd1wbHv7aCcm+zRtLMugS+JznQm+C5Sj5qAszmtc0v6j0Qy5s5iKbXFqbocKgvwePzvVQEeHZUXck2/zDILU03HyMDpI7qivOC53H6hq0ygKM53Xf9gfadMfIeJytnCyoMrEl1/FgyVQngJt9BZ5wcx82L4+PvniS/qwgwbmbj7qduF477AJrtzwIMeARqX8Zk5RU79IVpDfr61Ot295nq5+uGJ4rHQN5jEk/hdy/lbDbRVtKkc8VBgoOm8QVyYG2CvxldxtwQpcd1q+PoomkRQYf7k+6QqX6+biTnnwHwgEl86XW3vqRzl4m2kiYzqTckvWkc73Oj182fLMDrBCxAOwPLfzz2J2zPgXNnhW0iN/GwTWTu5LBNxDYR20TKCNgL6XlIbBOxTaTqnZptIraJ2CZim0i9h+S2idgmYptINQJ2QbUCGbucZZez7HJW1ZOmXc6yy1lzCNgmYptIOQG7nGWXs6o/Z7dNxDYR20TqvYdi70TsncjcOXLpkpa2J/BYvZnz3/eFmYted2fZG0ym8dm8HvaBpIleRUwv5L9tN3Jfzmt9G7DepFZJ417FNz0Vdo+zL1iaEqyiswAtwIAEAobXnYGlXdVIvS5gRcBarRkuTMPh/v4ET1UaQE2A56TOFZMakeGJvTUJGbgWrnSCq1Mp5uarawJs9KGSgZXWlSzGrVzr0jFwbgEaQKolsQCbAHB0VF2Fdv0xfzfdgFZaMdx3Z7mmp6d8h8y6lzEjOQ0S2vc/2Ceh8oEt/dka3NOXYmkfsLJPXYCtOF0W07MFGJC2BWgBBiQQMPwfVxYXjf8iWcoAAAAASUVORK5CYII="
                   alt=""
                 />
-                <span class="ml-[10px]">控制台</span>
+                <span class="ml-[10px]">{{ $t('navigation.control') }}</span>
               </div>
               <van-icon name="arrow" class="text-[14px]" />
             </li>
@@ -52,7 +52,7 @@
             >
               <div class="flex leading-[20px]">
                 <img class="w-[20px]" src="./../assets/images/btn2.97c07c75.png" alt="" />
-                <span class="ml-[10px]">遊戲</span>
+                <span class="ml-[10px]">{{ $t('navigation.game') }}</span>
               </div>
               <van-icon name="arrow" class="text-[14px]" />
             </li>
@@ -66,7 +66,7 @@
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAp5JREFUeF7t3M+ODFEcxfHvWZjgKViYYMOINWEj8RyGIRLxJGIxmfHvOVixsPUnLAgWPIUREj+50p1YmNF9T2Wq085d16l761Onunc/kWUJyEonTADNEgRw0QCr6jRwFbgIHJmc7zPwFLgv6Y155j3jk/2vARf2Y//BGlhVh4C7wBXY9afhZ0MEbkv6NiTkWPsPAjg5/BPg3Iwoz4DLQyGOuf9QgK1V6zPiTS/bknRjzsxfL6+qB5Pmz3O7bUnX5wn87VobsKrWgJd7fLa7nbF9zmuS3joPUVVngBdj7T8E4Baw0YmwKelmZ/Z3rKq2gfan0bPs/YcA/ACs9pweeC/pZGd2CvgRONZ5D3v/IQC/Awc6H2BH0uHO7BRw1P13Bayqch5sWbKS9ixZAP/xpgNofgoBDKApYMbTwACaAmY8DQygKWDG08AAmgJmPA0MoClgxtPAAJoCZjwNDKApYMbTwACaAmY8DQygKWDG08AAmgJmPA0MoClgxtPAAJoCZjwNDKApYMbTwACaAmY8DQygKWDG08AAmgJmPA0MoClgxtPAAJoCZjwNDKApYMbTwACaAmY8DQygKWDG08AAmgJmPA0MoClgxtPAAJoCZjwNDKApYMbTwBEBV4CjkylsbRpbm8r2P6zXkwFpbdrcF0ltrMqua6a5MVXVrmuId4A2pW0Z11fgFvBI0swjX2YCnGpV1Xng8RIi7gCXJD2ftxlzAbabV1Wbk9XmZS3TWpf0sOeBegBbpv1OnOrZcAEzr4Cz83y2fz7D3ICTFra5f5sLiNFzpA1J93qCLdMLeLxNXuvddMFyq5I+9Z6pF/Ag0H54l2GtSPrR+yABhFEATwDvet/aguX2/xNeMIBRj9P1CY964gXbPIDmCwmgCfgLR1JtYNl2Mx4AAAAASUVORK5CYII="
                   alt=""
                 />
-                <span class="ml-[10px]">報表</span>
+                <span class="ml-[10px]">{{ $t('navigation.report') }}</span>
               </div>
               <van-icon name="arrow" class="text-[14px]" />
             </li>
@@ -80,7 +80,7 @@
                   src="data:image/png;base64,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"
                   alt=""
                 />
-                <span class="ml-[10px]">設置</span>
+                <span class="ml-[10px]">{{ $t('設置') }}</span>
               </div>
               <van-icon name="arrow" class="text-[14px]" />
             </li>
@@ -92,21 +92,21 @@
             @click="$router.push('/login')"
             v-if="!isLogin"
           >
-            登錄
+            {{ $t('登錄') }}
           </button>
           <button
             class="border-[0.5px] border-[#ee4581] leading-[41px] rounded-[20px] px-[25px]"
             @click="$router.push('/register')"
             v-if="!isLogin"
           >
-            註冊
+            {{ $t('註冊') }}
           </button>
           <button
             class="border-[0.5px] border-[#ee4581] leading-[41px] rounded-[20px] px-[25px]"
             @click="userLogout()"
             v-if="isLogin"
           >
-            退出
+            {{ $t('退出') }}
           </button>
         </section>
       </div>
@@ -117,13 +117,15 @@
 <script setup>
 import { computed } from '@vue/reactivity'
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import { useStore } from '../store/index'
 import { logout as api_logout } from './../api/index'
 
+const { t } = useI18n()
 const store = useStore()
 const isLogin = computed(() => store.userInfo?.token)
-const userName = computed(() => (store.userInfo?.info ? store.userInfo.info.name : '未登入'))
+const userName = computed(() => (store.userInfo?.info ? store.userInfo.info.name : t('未登入')))
 
 const show = ref(false)
 const router = useRouter()

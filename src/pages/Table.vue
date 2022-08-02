@@ -2,19 +2,19 @@
   <section class="text-center text-white text-[18px] font-bold pt-[44px]">
     <p>$0.000</p>
     <div class="text-[12px] mt-[10px]">
-      <span class="mr-[20px]">资金提现</span>
-      <span>资金明细</span>
+      <span class="mr-[20px]">{{ $t('資金提現') }}</span>
+      <span>{{ $t('資金明細') }}</span>
     </div>
   </section>
   <div class="px-[2.5%] mt-[20px] flex flex-col items-center">
     <img class="w-[95%]" src="./../assets/images/zhu.2a387254.png" alt="" />
     <div class="bg-[#f0f3f7] p-[15px] mt-[-8px] rounded-[10px] w-full">
-      <p class="text-[14px] font-bold">盈利报表</p>
+      <p class="text-[14px] font-bold">{{ $t('盈利報表') }}</p>
       <ul>
         <li class="flex justify-between items-center p-[10px] bg-white rounded-[10px] mt-[10px]">
           <div>
             <p class="font-bold text-[14px] my-[5px] leading-tight">$0.00/$0.00</p>
-            <p class="text-[13px] my-[5px] leading-tight">今日投注/本月投注</p>
+            <p class="text-[13px] my-[5px] leading-tight">{{ $t('今日投注') }}/{{ $t('本月投注') }}</p>
           </div>
           <div class="bg-[#d0cdf4] w-[41px] h-[41px] rounded-[100%] flex-center-center">
             <img
@@ -27,7 +27,7 @@
         <li class="flex justify-between items-center p-[10px] bg-white rounded-[10px] mt-[10px]">
           <div>
             <p class="font-bold text-[14px] my-[5px] leading-tight">$0.00/$0.00</p>
-            <p class="text-[13px] my-[5px] leading-tight">今日中獎/本月中獎</p>
+            <p class="text-[13px] my-[5px] leading-tight">{{ $t('今日中獎') }}/{{ $t('本月中獎') }}</p>
           </div>
           <div class="bg-[#d0cdf4] w-[41px] h-[41px] rounded-[100%] flex-center-center">
             <img
@@ -40,7 +40,7 @@
         <li class="flex justify-between items-center p-[10px] bg-white rounded-[10px] mt-[10px]">
           <div>
             <p class="font-bold text-[14px] my-[5px] leading-tight">$0.00/$0.00</p>
-            <p class="text-[13px] my-[5px] leading-tight">今日返傭/本月返傭</p>
+            <p class="text-[13px] my-[5px] leading-tight">{{ $t('今日返傭') }}/{{ $t('本月返傭') }}</p>
           </div>
           <div class="bg-[#d0cdf4] w-[41px] h-[41px] rounded-[100%] flex-center-center">
             <img
@@ -53,7 +53,7 @@
         <li class="flex justify-between items-center p-[10px] bg-white rounded-[10px] mt-[10px]">
           <div>
             <p class="font-bold text-[14px] my-[5px] leading-tight">$0.00/$0.00</p>
-            <p class="text-[13px] my-[5px] leading-tight">今日反水/本月反水</p>
+            <p class="text-[13px] my-[5px] leading-tight">{{ $t('今日反水') }}/{{ $t('本月反水') }}</p>
           </div>
           <div class="bg-[#d0cdf4] w-[41px] h-[41px] rounded-[100%] flex-center-center">
             <img

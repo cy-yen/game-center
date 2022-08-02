@@ -6,19 +6,23 @@
       src="./../assets/images/logo6.png"
     />
   </section>
-  <section class="w-[95%] bg-[#f0f3f7] p-[15px] rounded-[10px] mt-[90px] ml-[2.5%]">
+  <section class="mt-[70px] mb-[20px]">
+    <p class="text-white text-center">{{ store.userInfo.info.name }}</p>
+  </section>
+  <section class="w-[95%] bg-[#f0f3f7] p-[15px] rounded-[10px] ml-[2.5%] mb-[20px]">
     <div class="bg-white text-[#333333] p-[15px] rounded-[10px]">
-      <p class="font-bold text-[14px]">$</p>
+      <p class="font-bold text-[14px]">$0.000</p>
+      <p class="text-[#999999] mt-[10px]">{{ addr }}</p>
       <div class="h-[7px] bg-[#3427b6] mt-[20px]"></div>
     </div>
     <div class="bg-white text-[#333333] p-[15px] rounded-[10px] mt-[10px]">
-      <p class="text-[14px]">设置</p>
+      <p class="text-[14px]">{{ $t('設置') }}</p>
       <ul>
         <li class="flex py-[15px] border-b-[#cacaca] border-b">
           <div class="w-[41px] h-[41px] bg-[#d0cdf4] rounded-[5px] flex-center-center"><Language /></div>
           <div class="flex flex-col justify-around pl-[10px]">
-            <p class="text-[13px]">語言設置</p>
-            <p>選擇首選語言</p>
+            <p class="text-[13px]">{{ $t('語言設置') }}</p>
+            <p>{{ $t('選擇首選語言') }}</p>
           </div>
         </li>
         <li class="flex py-[15px] border-b-[#cacaca] border-b">
@@ -30,8 +34,8 @@
             />
           </div>
           <div class="flex flex-col justify-around pl-[10px]">
-            <p class="text-[13px]">安全設置</p>
-            <p>設置登入密碼、提現密碼</p>
+            <p class="text-[13px]">{{ $t('安全設置') }}</p>
+            <p>{{ $t('設置登入密碼、提現密碼') }}</p>
           </div>
         </li>
         <li class="flex py-[15px] border-b-[#cacaca] border-b">
@@ -43,8 +47,8 @@
             />
           </div>
           <div class="flex flex-col justify-around pl-[10px]" @click="$router.push('/wallet')">
-            <p class="text-[13px]">投注錢包</p>
-            <p>添加、綁定投注錢包地址</p>
+            <p class="text-[13px]">{{ $t('投注錢包') }}</p>
+            <p>{{ $t('添加、綁定投注錢包地址') }}</p>
           </div>
         </li>
         <li class="flex py-[15px] border-b-[#cacaca] border-b">
@@ -56,8 +60,8 @@
             />
           </div>
           <div class="flex flex-col justify-around pl-[10px]">
-            <p class="text-[13px]" @click="userLogout()">退出</p>
-            <p>退出App</p>
+            <p class="text-[13px]" @click="userLogout()">{{ $t('退出') }}</p>
+            <p>{{ $t('退出App') }}</p>
           </div>
         </li>
       </ul>
@@ -68,11 +72,18 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { useStore } from '../store/index'
-import { logout as api_logout } from './../api/index'
+import { logout as api_logout, getAccount } from './../api/index'
 import Language from '../components/Language.vue'
+import { onMounted, ref } from 'vue'
 
 const store = useStore()
 const router = useRouter()
+
+const addr = ref('')
+onMounted(async () => {
+  const res = await getAccount({})
+  addr.value = res.data.info.playgame_token
+})
 
 const userLogout = async () => {
   await api_logout({})

@@ -6,3 +6,4 @@ export const gamecoinaddress = async (data) => get('Systeminfo/gamecoinaddress',
 export const defaultinfo = async (data) => get('Systeminfo/Defaultinfo', data)
 export const register = async (data) => post('user/reg', data)
 export const getAccount = async (data) => post('UserCenter/getInfo', data)
+export const update_user_api = async (data) => post('Usercenter/userUpdate', data)

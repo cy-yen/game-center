@@ -2,12 +2,12 @@
   <section class="text-center text-white text-[18px] font-bold pt-[44px]">
     <p>$0.000</p>
     <div class="text-[12px] mt-[10px]">
-      <span>历史中奖</span>
+      <span>{{ $t('歷史中獎') }}</span>
     </div>
   </section>
   <section class="mt-[10px] mb-[20px] flex flex-col items-center">
     <div class="bg-[#f0f3f7] p-[15px] rounded-[10px] w-full">
-      <section class="inline-block bg-white p-[10px] rounded-[5px]">
+      <section class="inline-block bg-white p-[10px] rounded-[5px] w-[82px]">
         <div class="w-[62px] h-[62px] bg-[#d0cdf4] flex-center-center rounded-[10px]">
           <img
             class="w-[26px]"
@@ -15,12 +15,12 @@
             alt=""
           />
         </div>
-        <p class="text-center text-[13px]">邀请好友</p>
+        <p class="text-center text-[13px]">{{ $t('邀请好友') }}</p>
       </section>
       <div class="mt-[26px]">
         <div class="flex justify-between text-[14px]">
-          <p class="font-bold">投注数据</p>
-          <p>查看明细</p>
+          <p class="font-bold">{{ $t('投注數據') }}</p>
+          <p>{{ $t('查看明细') }}</p>
         </div>
         <div class="bg-white p-[15px] rounded-[5px] mt-[10px] flex items-center justify-between">
           <div class="flex">
@@ -31,9 +31,9 @@
                 alt=""
               />
             </div>
-            <div class="ml-[10px] border-r border-r-[#d3d3d3] w-[130px]">
-              <p class="font-bold text-[14px]">投資</p>
-              <p class="mt-[5px] text-[13px]">本月投資</p>
+            <div class="ml-[10px] border-r border-r-[#d3d3d3] w-[135px]">
+              <p class="font-bold text-[14px]">{{ $t('投資') }}</p>
+              <p class="mt-[5px] text-[13px]">{{ $t('本月投資') }}</p>
             </div>
           </div>
           <span class="grow ml-[15px] font-bold text-[14px]">$0.00</span>
@@ -47,15 +47,17 @@
                 alt=""
               />
             </div>
-            <div class="ml-[10px] border-r border-r-[#d3d3d3] w-[130px]">
-              <p class="font-bold text-[14px]">中獎</p>
-              <p class="mt-[5px] text-[13px]">本月中獎</p>
+            <div class="ml-[10px] border-r border-r-[#d3d3d3] w-[135px]">
+              <p class="font-bold text-[14px]">{{ $t('中獎') }}</p>
+              <p class="mt-[5px] text-[13px]">{{ $t('本月中獎') }}</p>
             </div>
           </div>
           <span class="grow ml-[15px] font-bold text-[14px]">$0.00</span>
         </div>
-        <p class="text-center mt-[26px] text-[18px] font-bold leading-tight">推廣數據</p>
-        <p class="text-center text-[14px] mt-[5px] leading-tight">邀請好友參與投注、即可獲得豐厚獎勵</p>
+        <p class="text-center mt-[26px] text-[18px] font-bold leading-tight">{{ $t('推廣數據') }}</p>
+        <p class="text-center text-[14px] mt-[5px] leading-tight">
+          {{ $t('邀請好友參與投注、即可獲得豐厚獎勵') }}
+        </p>
         <div class="flex flex-wrap justify-between">
           <div class="w-[calc(50%-10px)] mt-[10px] bg-white p-[15px] rounded-[10px] flex flex-col items-center">
             <div class="w-[62px] h-[62px] bg-[#d0cdf4] rounded-[100%] flex-center-center">
@@ -66,7 +68,7 @@
               />
             </div>
             <p class="text-[18px] mt-[15px] mb-[5px]">0</p>
-            <p class="text-[14px]">渠道投注</p>
+            <p class="text-[14px]">{{ $t('渠道投注') }}</p>
           </div>
           <div class="w-[calc(50%-10px)] mt-[10px] bg-white p-[15px] rounded-[10px] flex flex-col items-center">
             <div class="w-[62px] h-[62px] bg-[#d0cdf4] rounded-[100%] flex-center-center">
@@ -77,7 +79,7 @@
               />
             </div>
             <p class="text-[18px] mt-[15px] mb-[5px]">0</p>
-            <p class="text-[14px]">渠道中獎</p>
+            <p class="text-[14px]">{{ $t('渠道中獎') }}</p>
           </div>
           <div class="w-[calc(50%-10px)] mt-[10px] bg-white p-[15px] rounded-[10px] flex flex-col items-center">
             <div class="w-[62px] h-[62px] bg-[#d0cdf4] rounded-[100%] flex-center-center">
@@ -88,7 +90,7 @@
               />
             </div>
             <p class="text-[18px] mt-[15px] mb-[5px]">0</p>
-            <p class="text-[14px]">渠道盈利</p>
+            <p class="text-[14px]">{{ $t('渠道盈利') }}</p>
           </div>
           <div class="w-[calc(50%-10px)] mt-[10px] bg-white p-[15px] rounded-[10px] flex flex-col items-center">
             <div class="w-[62px] h-[62px] bg-[#d0cdf4] rounded-[100%] flex-center-center">
@@ -99,22 +101,22 @@
               />
             </div>
             <p class="text-[18px] mt-[15px] mb-[5px]">0</p>
-            <p class="text-[14px]">渠道人數</p>
+            <p class="text-[14px]">{{ $t('渠道人數') }}</p>
           </div>
         </div>
       </div>
       <div class="mt-[15px] bg-white p-[15px] rounded-[10px]">
-        <p class="text-[14px]">关于我们</p>
-        <p class="text-[19px] my-[15px] leading-tight font-bold">我們追求極簡流程\快速派彩</p>
+        <p class="text-[14px]">{{ $t('關於我們') }}</p>
+        <p class="text-[19px] my-[15px] leading-tight font-bold">{{ $t('我們追求極簡流程快速派彩') }}</p>
         <p class="text-[14px]">We are at our best</p>
         <img class="w-[239px] m-auto" src="./../assets/images/qian.44806549.png" alt="" />
         <p class="text-[14px]">
-          只需要一個【去中心化】數字錢包，即刻參與抽獎。無任何玩法、策略、設備限制，隨時隨地、隨心所欲！中獎後10秒內自動到賬，遊戲不間斷，體驗酣暢淋灕。
+          {{ $t('控制器.text') }}
         </p>
         <button
           class="mt-[10px] bg-[#00b4ff] text-white text-[11px] leading-[26px] px-[10px] rounded-[20px] active:bg-[#2979ff] active:outline-none"
         >
-          查看更多
+          {{ $t('查看更多') }}
         </button>
       </div>
     </div>

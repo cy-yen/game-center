@@ -2,7 +2,7 @@
   <section class="text-center text-white text-[18px] font-bold pt-[44px]">
     <p>$0.000</p>
     <div class="text-[12px] mt-[10px]">
-      <span>歷史中獎</span>
+      <span>{{ $t('歷史中獎') }}</span>
     </div>
   </section>
   <div class="px-[2.5%] mt-[20px] flex flex-col items-center">
@@ -11,23 +11,23 @@
       <div class="flex justify-between text-[14px]">
         <div class="w-[45%] bg-white rounded-[10px] p-[10px]">
           <div class="bg-black/20 h-[130px]"></div>
-          <p class="mt-[15px] pl-[10px]">本月投注</p>
+          <p class="mt-[15px] pl-[10px]">{{ $t('本月投注') }}</p>
           <p class="mt-[15px] pl-[10px]">$0.00</p>
         </div>
         <div class="w-[45%] bg-white rounded-[10px] p-[10px]">
           <div class="bg-black/20 h-[130px]"></div>
-          <p class="mt-[15px] pl-[10px]">本月中奖</p>
+          <p class="mt-[15px] pl-[10px]">{{ $t('本中獎月') }}</p>
           <p class="mt-[15px] pl-[10px]">$0.00</p>
         </div>
       </div>
-      <p class="text-[14px] font-bold mt-[10px]">立即投注</p>
+      <p class="text-[14px] font-bold mt-[10px]">{{ $t('立即投注') }}</p>
       <Carousel />
-      <p class="text-[14px] font-bold">投注數據</p>
+      <p class="text-[14px] font-bold">{{ $t('投注數據') }}</p>
       <ul>
         <li class="flex justify-between items-center p-[10px] bg-white rounded-[10px] mt-[10px]">
           <div>
             <p class="font-bold text-[14px] my-[5px] leading-tight">$0.00</p>
-            <p class="text-[13px] my-[5px] leading-tight">今日投注</p>
+            <p class="text-[13px] my-[5px] leading-tight">{{ $t('今日投注') }}</p>
           </div>
           <div class="bg-[#d0cdf4] w-[41px] h-[41px] rounded-[100%] flex-center-center">
             <img
@@ -40,7 +40,7 @@
         <li class="flex justify-between items-center p-[10px] bg-white rounded-[10px] mt-[10px]">
           <div>
             <p class="font-bold text-[14px] my-[5px] leading-tight">$0.00</p>
-            <p class="text-[13px] my-[5px] leading-tight">今日中獎</p>
+            <p class="text-[13px] my-[5px] leading-tight">{{ $t('今日中獎') }}</p>
           </div>
           <div class="bg-[#d0cdf4] w-[41px] h-[41px] rounded-[100%] flex-center-center">
             <img
