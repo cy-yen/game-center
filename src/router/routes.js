@@ -62,6 +62,24 @@ const routes = [
       showHeader: false,
       showFooter: false
     }
+  },
+  {
+    path: '/game-info/:name',
+    name: 'game-info',
+    component: () => import('../pages/GameInfo.vue'),
+    meta: {
+      showHeader: false,
+      showFooter: false
+    }
+  },
+  {
+    path: '/wallet',
+    name: 'wallet',
+    component: () => import('../pages/Wallet.vue'),
+    meta: {
+      showHeader: false,
+      showFooter: false
+    }
   }
 ]
 

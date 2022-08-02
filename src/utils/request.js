@@ -56,6 +56,11 @@ service.interceptors.request.use(
 
 service.interceptors.response.use(
   function (response) {
+    if (response.code == 10008 || response.code == 10007) {
+      router.push('/login')
+      return ''
+    }
+
     return response.data
   },
   function (error) {
@@ -86,7 +91,7 @@ export const post = (url, data, params) => {
   const timestamp = moment().unix()
   data = QueryString.stringify({
     ...data,
-    token: info ? info.userInfo.token : null
+    token: info ? info.userInfo?.token : null
   })
   return service({
     url: url,

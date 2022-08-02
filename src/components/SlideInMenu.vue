@@ -122,8 +122,8 @@ import { useStore } from '../store/index'
 import { logout as api_logout } from './../api/index'
 
 const store = useStore()
-const isLogin = computed(() => store.userInfo.token)
-const userName = computed(() => (store.userInfo.info ? store.userInfo.info.name : '未登入'))
+const isLogin = computed(() => store.userInfo?.token)
+const userName = computed(() => (store.userInfo?.info ? store.userInfo.info.name : '未登入'))
 
 const show = ref(false)
 const router = useRouter()
@@ -136,6 +136,7 @@ const goto = (_path) => {
 const userLogout = async () => {
   await api_logout({})
   store.setUserInfo({})
+  show.value = false
   router.push('/home')
 }
 </script>

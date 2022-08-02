@@ -9,7 +9,14 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const auth = JSON.parse(sessionStorage.getItem('store'))
-
+  if (auth?.userInfo && auth?.userInfo.token) {
+    return next()
+  } else {
+    if (to.name != 'login' && to.name != 'register' && to.name != 'home') {
+      Toast.fail('请登录')
+      return next('/login')
+    }
+  }
   next()
 })
 

@@ -22,7 +22,9 @@
           <p class="my-[5px]">
             <span class="mr-[20px]">赔率</span><span class="text-[#25ac44]">{{ game.game_odds_num }}</span>
           </p>
-          <p class="ml-[62px] mt-[10px] text-[#3a99ff]">立即投注</p>
+          <p class="ml-[62px] mt-[10px] text-[#3a99ff]" @click="$router.push(`/game-info/${game.game_code}`)">
+            立即投注
+          </p>
         </div>
       </li>
     </ul>
@@ -96,6 +98,7 @@ onMounted(async () => {
   gameList.splice(0)
   const res = await gamecoinaddress({})
   gameList.push(...res.data)
+  store.setGames(res.data)
 })
 
 const getApiImage = (_path) => store.imageServerPath + _path

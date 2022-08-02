@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useStore = defineStore('auth', {
   state: () => {
-    return { userInfo: {}, defaultInfo: {} }
+    return { userInfo: {}, defaultInfo: {}, games: [] }
   },
   persist: { key: 'store', storage: window.sessionStorage },
   actions: {
@@ -11,6 +11,9 @@ export const useStore = defineStore('auth', {
     },
     setDefaultInfo(data) {
       this.defaultInfo = data
+    },
+    setGames(data) {
+      this.games = data
     }
   },
   getters: {
