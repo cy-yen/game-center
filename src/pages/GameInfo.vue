@@ -85,5 +85,7 @@ import { useStore } from '../store'
 const store = useStore()
 const route = useRoute()
 const games = store.games
+
+// 当前游戏资讯
 const currentGame = computed(() => games.find((e) => e.game_code === route.params.name))
 </script>

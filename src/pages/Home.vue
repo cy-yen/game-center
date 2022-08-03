@@ -95,5 +95,6 @@ onMounted(async () => {
   store.setGames(res.data)
 })
 
+// 获取游戏图片
 const getApiImage = (_path) => store.imageServerPath + _path
 </script>

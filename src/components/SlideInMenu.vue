@@ -135,6 +135,7 @@ const goto = (_path) => {
   show.value = false
 }
 
+// 用户登出
 const userLogout = async () => {
   await api_logout({})
   store.setUserInfo({})

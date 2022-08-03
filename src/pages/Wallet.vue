@@ -1,6 +1,6 @@
 <template>
   <section class="h-[44px] text-[15px] text-white flex items-center px-[15px] bg-[#3629b7]">
-    <i class="w-[44px] h-[44px] ml-[-15px] flex-center-center" @click="$router.push('/home')">
+    <i class="w-[44px] h-[44px] ml-[-15px] flex-center-center" @click="$router.push('/vip')">
       <van-icon name="arrow-left" class="text-[30px]" />
     </i>
     {{ $t('修改錢包地址') }}
@@ -31,9 +31,7 @@ import { update_user_api } from './../api/index'
 const router = useRouter()
 const addr = ref('')
 const updateWallet = async () => {
-  await update_user_api({
-    playgame_token: addr.value
-  })
+  await update_user_api({ playgame_token: addr.value })
   router.push('/vip')
 }
 </script>

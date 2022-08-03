@@ -61,6 +61,7 @@ onMounted(async () => {
   const res = await getAccount({})
   const defaultLang = res.data.info?.set_lang || 'cn'
 
+  // 初始化语言清单
   store.setLanguage(defaultLang)
   languages.push(
     ...store.avaliableLanguage?.map((e) => {
@@ -70,6 +71,7 @@ onMounted(async () => {
   )
 })
 
+// 切换语言
 const switchLang = async () => {
   store.setLanguage(languages.find((e) => e.active).lang)
   await update_user_api({
@@ -77,4 +79,11 @@ const switchLang = async () => {
   })
   show.value = false
 }
+
+// 对外暴露方法
+defineExpose({
+  showLanguage: () => {
+    show.value = true
+  }
+})
 </script>

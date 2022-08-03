@@ -23,7 +23,10 @@
 
 <script setup>
 import { onMounted, reactive } from 'vue'
+import { useStore } from '../store'
 import { gamecoinaddress } from './../api/index'
+
+const store = useStore()
 
 const gameList = reactive([])
 onMounted(async () => {

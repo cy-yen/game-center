@@ -18,8 +18,8 @@
     <div class="bg-white text-[#333333] p-[15px] rounded-[10px] mt-[10px]">
       <p class="text-[14px]">{{ $t('設置') }}</p>
       <ul>
-        <li class="flex py-[15px] border-b-[#cacaca] border-b">
-          <div class="w-[41px] h-[41px] bg-[#d0cdf4] rounded-[5px] flex-center-center"><Language /></div>
+        <li class="flex py-[15px] border-b-[#cacaca] border-b" @click="showLanguage()">
+          <div class="w-[41px] h-[41px] bg-[#d0cdf4] rounded-[5px] flex-center-center"><Language ref="language" /></div>
           <div class="flex flex-col justify-around pl-[10px]">
             <p class="text-[13px]">{{ $t('語言設置') }}</p>
             <p>{{ $t('選擇首選語言') }}</p>
@@ -38,7 +38,7 @@
             <p>{{ $t('設置登入密碼、提現密碼') }}</p>
           </div>
         </li>
-        <li class="flex py-[15px] border-b-[#cacaca] border-b">
+        <li class="flex py-[15px] border-b-[#cacaca] border-b" @click="$router.push('/wallet')">
           <div class="w-[41px] h-[41px] bg-[#d0cdf4] rounded-[5px] flex-center-center">
             <img
               class="w-[20px]"
@@ -46,7 +46,7 @@
               alt=""
             />
           </div>
-          <div class="flex flex-col justify-around pl-[10px]" @click="$router.push('/wallet')">
+          <div class="flex flex-col justify-around pl-[10px]">
             <p class="text-[13px]">{{ $t('投注錢包') }}</p>
             <p>{{ $t('添加、綁定投注錢包地址') }}</p>
           </div>
@@ -59,8 +59,8 @@
               alt=""
             />
           </div>
-          <div class="flex flex-col justify-around pl-[10px]">
-            <p class="text-[13px]" @click="userLogout()">{{ $t('退出') }}</p>
+          <div class="flex flex-col justify-around pl-[10px]" @click="userLogout()">
+            <p class="text-[13px]">{{ $t('退出') }}</p>
             <p>{{ $t('退出App') }}</p>
           </div>
         </li>
