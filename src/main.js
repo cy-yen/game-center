@@ -6,7 +6,6 @@ import 'lib-flexible'
 import { Popup, Overlay, Switch, Swipe, SwipeItem, Button } from 'vant'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
-import { useStore } from './store/index'
 
 import './assets/styles/index.css'
 import 'vant/lib/index.css'
@@ -16,8 +15,6 @@ const app = createApp(App)
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
 app.use(pinia)
-
-const store = useStore()
 
 app.use(router)
 app.use(i18n)
