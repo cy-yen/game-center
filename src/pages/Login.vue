@@ -18,7 +18,7 @@
           v-model="pass"
           class="mt-[49px] border-b-[#e8f0fe4d] border-b-[0.5px] bg-transparent placeholder:text-white pb-[9px]"
           type="password"
-          placeholder="$t('請輸入您的賬號密碼')"
+          :placeholder="$t('請輸入您的賬號密碼')"
         />
       </div>
       <button class="text-[15px] w-full mt-[100px] bg-[#2979ff] h-[41px] rounded-[52px]" @click="userLogin">

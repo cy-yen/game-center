@@ -3,7 +3,7 @@
     <van-swipe class="my-swipe" :autoplay="5000" indicator-color="white">
       <van-swipe-item v-for="item in gameList" :key="item">
         <div
-          class="h-[154px] image-bg bg-[#1a3647] bg-cover rounded-[10px] py-[10px] px-[15px] flex flex-col justify-between text-[15px]"
+          class="h-[154px] bg-[#1a3647] bg-cover rounded-[10px] py-[10px] px-[15px] flex flex-col justify-between text-[15px]"
         >
           <p class="text-white">{{ item.game_name }}</p>
           <p class="text-[#94c2f3]">{{ item.coin_address }}</p>
