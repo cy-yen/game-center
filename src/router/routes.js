@@ -65,7 +65,7 @@ const routes = [
   },
   {
     path: '/game-info/:name',
-    name: 'game-info',
+    name: 'gameInfo',
     component: () => import('../pages/GameInfo.vue'),
     meta: {
       showHeader: false,

@@ -94,6 +94,7 @@ const userRegister = async () => {
     const res = await register({
       username: username.value,
       pass: pass.value,
+      passcheck: pass.value,
       invite: invite.value
     })
     if (res.code === 0) {

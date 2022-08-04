@@ -57,7 +57,11 @@ const userLogin = async () => {
   }
 
   const res = await api_login({ username: username.value, pass: pass.value, google_verify_code: '' })
-  store.setUserInfo(res.data)
-  router.push('/home')
+  if (!res.code) {
+    store.setUserInfo(res.data)
+    router.push('/vip')
+  } else {
+    Toast.fail(res.msg)
+  }
 }
 </script>

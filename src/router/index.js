@@ -12,7 +12,8 @@ router.beforeEach((to, from, next) => {
   if (auth?.userInfo && auth?.userInfo.token) {
     return next()
   } else {
-    if (to.name != 'login' && to.name != 'register' && to.name != 'home') {
+    const noAuth = ['login', 'register', 'home', 'gameInfo']
+    if (!noAuth.includes(to.name)) {
       Toast.fail('请登录')
       return next('/login')
     }

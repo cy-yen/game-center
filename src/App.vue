@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-full">
     <Header v-if="$route.meta.showHeader" />
-    <section class="grow overflow-auto">
+    <section class="grow overflow-auto" id="page">
       <router-view />
     </section>
     <Footer v-if="$route.meta.showFooter" />

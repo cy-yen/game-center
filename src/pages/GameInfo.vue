@@ -7,13 +7,23 @@
   </section>
   <section class="p-[10px]">
     <div class="p-[20px] bg-[#4b3aec] rounded-[20px] mt-[10px]">
-      <div class="h-[240px]"></div>
+      <div class="flex-center-center">
+        <VueQrcode :value="currentGame.coin_address" width="320" />
+      </div>
     </div>
     <div class="p-[20px] bg-[#4b3aec] rounded-[20px] mt-[10px]">
       <p class="my-[10px] text-[26px] text-white">{{ currentGame.game_name }}</p>
       <p class="text-white text-[18px]">{{ $t('賠率') }}{{ currentGame.game_odds_num }}</p>
-      <div class="">
-        <span class="text-white text-[14px]">{{ currentGame.coin_address }}</span>
+      <div class="border-[0.5px] border-[#0237a6] mt-[10px] rounded-[10px] flex-center-center pl-[10px]">
+        <span class="text-white text-[14px] inline-block w-[60%] overflow-hidden text-ellipsis whitespace-nowrap">
+          {{ currentGame.coin_address }}
+        </span>
+        <button
+          class="bg-[#0d5afd] w-[40%] leading-[40px] text-white px-[10px] rounded-tr-[10px] rounded-br-[10px] text-[14px]"
+          @click="copy(currentGame.coin_address)"
+        >
+          {{ $t('複製地址') }}
+        </button>
       </div>
     </div>
     <div class="p-[20px] bg-[#4b3aec] rounded-[20px] mt-[10px]">
@@ -67,7 +77,7 @@
           <p class="text-white text-[18px] mt-[30px]">{{ $t('賠率') }}{{ game.game_odds_num }}</p>
           <button
             class="bg-[#ea4c62] text-white py-[3px] px-[8px] rounded-[5px] mt-[10px]"
-            @click="$router.push(`/game-info/${game.game_code}`)"
+            @click="changeGame(game.game_code)"
           >
             {{ $t('立即遊戲') }}
           </button>
@@ -79,13 +89,28 @@
 
 <script setup>
 import { computed } from '@vue/reactivity'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useStore } from '../store'
+import VueQrcode from 'vue-qrcode'
+import clipboard from 'clipboardy'
+import { Toast } from 'vant'
 
 const store = useStore()
 const route = useRoute()
+const router = useRouter()
 const games = store.games
 
 // 当前游戏资讯
 const currentGame = computed(() => games.find((e) => e.game_code === route.params.name))
+
+// 切换游戏
+const changeGame = (code) => {
+  document.getElementById('page').scrollTo(0, 0)
+  router.push(`/game-info/${code}`)
+}
+
+const copy = (addr) => {
+  clipboard.write(addr)
+  Toast.success('复制成功')
+}
 </script>

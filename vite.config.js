@@ -10,5 +10,16 @@ export default defineConfig({
     Components({
       resolvers: [VantResolver()]
     })
-  ]
+  ],
+  build: {
+    emptyOutDir: true,
+    assetsDir: 'game-center',
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'game-center/static/js/[name]-[hash].js',
+        entryFileNames: 'game-center/static/js/[name]-[hash].js',
+        assetFileNames: 'game-center/static/css/[name]-[hash].[ext]'
+      }
+    }
+  }
 })
